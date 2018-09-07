@@ -1,0 +1,22 @@
+colo desert
+set shell=/usr/bin/zsh\ -l
+set foldmethod=indent
+set rtp+=~/.fzf
+
+let maplocalleader=","
+let g:org_agenda_files=['~/.yadr/GoalsList/list.org', '~/.yadr/GoalsList/today.org']
+
+set background=dark
+
+" Display tabs as '>-'
+set listchars=trail:☠,tab:>>
+
+" Function for trimming whitespace
+fun! TrimWhiteSpace()
+  let l:save = winsaveview()
+  %s/\s\+$//e
+  call winrestview(l:save)
+endfun
+
+" Custom
+map <silent> <F12> :call TrimWhiteSpace()<cr>
