@@ -11,6 +11,7 @@ alias srcocc='source /usr/local/bin/kroc-setup.sh'
 alias ssv='ssh dawallach@mote.cs.vassar.edu'
 alias swap='xmodmap ~/Documents/.xmodmap'
 alias ssm='ssh wallad07@minerva.hpc.mssm.edu'
+alias ssx='ssh -XY wallad07@minerva.hpc.mssm.edu'
 alias check='grep "egg" -R *; grep "pyc" -R *'
 alias cleane='rm -rf build; rm -rf dist; rm -rf ensemble.egg-info; rm ensemble/*.pyc;'
 alias tach='tmux attach-session -t 0'
@@ -37,3 +38,4 @@ alias setupR='export PKG_CXXFLAGS=`Rscript -e '\''Rcpp:::CxxFlags()'\''`; export
 
 # Port Access
 alias allow='sudo setcap '\''cap_net_bind_service=+ep'\'
+alias gpg='gpg2'
