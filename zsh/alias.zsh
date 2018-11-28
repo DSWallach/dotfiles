@@ -31,7 +31,7 @@ alias sac='source activate'
 # Git
 alias gitcleanup='git fetch -p && git branch -vv | awk '\''/: gone]/{print $1}'\'' | xargs git branch -d'
 alias gcmp='ga; gc -m "Update"; gp'
-alias gsync='cd /home/david/.yadr/GoalsList/; gcmp; po;'
+alias gsync='cd ~/.yadr/GoalsList/; gcmp; po;'
 
 # R Nonsense
 alias setupR='export PKG_CXXFLAGS=`Rscript -e '\''Rcpp:::CxxFlags()'\''`; export PKG_LIBS=`Rscript -e '\''-enable-shared-lib -ligraph'\''`'
